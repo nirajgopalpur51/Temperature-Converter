@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description"
+            content="
+    A temperature converter helps in the conversion of the measurement units of the temperature recorded in a particular unit. Temperature expresses the degree of heat or cold of a solid, liquid, or gas. Temperature is measured using a thermometer.">
+
+        <meta name="keywords"
+            content="temperature converter, convert celsius to fahrenheit, convert fahrenheit to celsius">
+
+        <title>Temperature Converter</title>
+    </head>
+
+    <body>
+
+        <h1 class="text-center"> <span id="fa" class="fa"></span> Temperature
+            Converter</h1>
+
+        <form class="text-center" id="tempCalc"
+            onsubmit="calculateTemp(); return false">
+            <label for="temp">Please Enter the Temperature you'd like to
+                convert.</label>
+            <div class="row my-3">
+                <div class="col">
+                    <input type="number" step="any" id="temp"
+                        class="form-control">
+                </div>
+                <div class="col">
+                    <select name="temp_diff" class="form-control"
+                        id="temp_diff">
+                        <option value="cel"><span>&#176;</span>Celsius</option>
+                        <option
+                            value="fah"><span>&#176;</span>Fahrenheit</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- <input type="submit" class="d-flex justify-content-center mx-auto" name="temp"> -->
+            <button type="submit"
+                class="btn btn-danger d-flex justify-content-center mx-auto my-2">Submit</button>
+            <br />
+            <span id="resultContainer"></span>
+        </form>
+
+    </body>
+
+</html>
